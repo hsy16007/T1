@@ -17,8 +17,8 @@ func main() {
 }
 
 func CityHandler(res http.ResponseWriter, req *http.Request) {
-	data, _ := json.Marshal("{'cities' : '北京', '上海', '广州', '赤峰'}")
+	data, _ := json.Marshal("{'cities' : '北京', '上海', '广州', '赤峰', '喀喇沁旗'}")
 	res.Header().Set("Content-Type", "application/json; charset=utf-8")
 	res.Write(data)
-	fmt.Println(" '北京', '上海', '广州', '赤峰' ")
+	fmt.Println(" '北京', '上海', '广州', '赤峰', '喀喇沁旗' ")
 }
