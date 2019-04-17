@@ -12,7 +12,7 @@ func main() {
 	http.HandleFunc("/cities.json", CityHandler)
 	err := http.ListenAndServe(":5000", nil)
 	if err != nil {
-		log.Fatal("ListenAndServe:", err)
+		log.Fatal("hsy ListenAndServe:", err)
 	}
 }
 
