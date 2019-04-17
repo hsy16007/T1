@@ -21,4 +21,5 @@ func CityHandler(res http.ResponseWriter, req *http.Request) {
 	res.Header().Set("Content-Type", "application/json; charset=utf-8")
 	res.Write(data)
 	fmt.Println(" '北京', '上海', '广州', '赤峰', '喀喇沁旗' ")
+	fmt.Println("测试提交git")
 }
